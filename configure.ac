@@ -30,11 +30,11 @@ AC_CONFIG_SRCDIR([futurerestore])
 
 # Check for libraries
 AC_SEARCH_LIBS([pthread_create], [pthread])
-PKG_CHECK_MODULES(libplist, libplist >= 2.0.0)
+PKG_CHECK_MODULES(libplist, libplist-2.0 >= 2.2.0)
 PKG_CHECK_MODULES(libzip, libzip >= 0.10)
 PKG_CHECK_MODULES(libimobiledevice, libimobiledevice-1.0 >= 1.2.1)
 PKG_CHECK_MODULES(libfragmentzip, libfragmentzip >= 1.0)
-PKG_CHECK_MODULES(libirecovery, libirecovery >= 0.2.0)
+PKG_CHECK_MODULES(libirecovery, libirecovery-1.0 >= 1.0.0)
 
 AC_PROG_CC
 AC_PROG_CXX
